@@ -1,0 +1,43 @@
+%Filename: ot1pmy.fd
+%Created by: tex driver
+%Created using fontinst v1.929
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1pmy.fd}
+   [2006/11/13 Fontinst v1.929 font definitions for OT1/pmy.]
+
+\DeclareFontFamily{OT1}{pmy}{}
+
+\DeclareFontShape{OT1}{pmy}{m}{n}{
+   <-> pmyr7t
+}{}
+
+\DeclareFontShape{OT1}{pmy}{m}{sc}{
+   <-> pmyrc7t
+}{}
+
+\DeclareFontShape{OT1}{pmy}{m}{sl}{
+   <-> pmyro7t
+}{}
+
+\DeclareFontShape{OT1}{pmy}{b}{n}{
+   <-> pmyb7t
+}{}
+
+\DeclareFontShape{OT1}{pmy}{b}{sc}{
+   <-> pmybc7t
+}{}
+
+\DeclareFontShape{OT1}{pmy}{b}{sl}{
+   <-> pmybo7t
+}{}
+
+\DeclareFontShape{OT1}{pmy}{m}{it}{<->ssub * pmy/m/sl}{}
+\DeclareFontShape{OT1}{pmy}{bx}{n}{<->ssub * pmy/b/n}{}
+\DeclareFontShape{OT1}{pmy}{bx}{sc}{<->ssub * pmy/b/sc}{}
+\DeclareFontShape{OT1}{pmy}{bx}{sl}{<->ssub * pmy/b/sl}{}
+\DeclareFontShape{OT1}{pmy}{b}{it}{<->ssub * pmy/b/sl}{}
+\DeclareFontShape{OT1}{pmy}{bx}{it}{<->ssub * pmy/b/it}{}
+
+\endinput

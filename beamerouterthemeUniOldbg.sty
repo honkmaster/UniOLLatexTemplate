@@ -1,0 +1,35 @@
+\ProvidesPackageRCS $Header: beamerouterthemeUniOldbg.sty,v 1.0 2006/11/15 $
+
+% Copyright 2006 by Thomas Schloemer <thomas.schloemer@uni-oldenburg.de>
+% Based on the Infolines-Theme by Till Tantau
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\mode<presentation>
+
+\setbeamercolor*{author in head/foot}{parent=palette tertiary}
+\setbeamercolor*{title in head/foot}{parent=palette secondary}
+\setbeamercolor*{date in head/foot}{parent=palette primary}
+
+\defbeamertemplate*{footline}{UniOldbg}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+    \hspace*{3.5em}\usebeamerfont{date in head/foot}\today~~~
+    \insertframenumber{}/\inserttotalframenumber
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\setbeamersize{text margin left=0.5cm,text margin right=0.5cm}
+
+\mode
+<all>

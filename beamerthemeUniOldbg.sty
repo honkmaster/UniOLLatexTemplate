@@ -1,0 +1,24 @@
+\ProvidesPackageRCS $Header: beamerthemeUniOldbg.sty,v 1.0 2006/11/15 $
+
+% Copyright 2006 by Thomas Schloemer <thomas.schloemer@uni-oldenburg.de>
+% Based on the Boadilla-Theme by Manuell Carro
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\mode<presentation>
+
+\newif\ifbeamer@secheader
+\beamer@secheaderfalse
+
+\DeclareOptionBeamer{secheader}{\beamer@secheadertrue}
+\ProcessOptionsBeamer
+
+\usecolortheme{UniOldbg}
+\useinnertheme{UniOldbg}
+\useoutertheme{UniOldbg}
+
+\ifbeamer@secheader\else\setbeamertemplate{headline}[default]\fi
+
+\mode
+<all>

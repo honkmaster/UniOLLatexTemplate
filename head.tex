@@ -1,0 +1,18 @@
+
+% --- Header
+\setbeamertemplate{headline}{}
+\renewcommand{\frametitle}[1]
+{
+  \leavevmode
+  \hbox{
+  \begin{beamercolorbox}[wd=1.01\paperwidth,ht=0.17\paperheight]{}
+	\begin{picture}(0,0){
+		\put(-6, 0){\includegraphics[width=1.01\paperwidth]{images/FullBow}}
+		\put(11,32){\Large \bf \textcolor{white}{#1}}
+	}
+	\end{picture}
+  \end{beamercolorbox}
+  }
+  \vskip0pt
+}
+\newcommand{\Fat}[1]{{\large \bf \textcolor{cdc_Blue}{#1}}}

@@ -1,0 +1,34 @@
+%Filename: 8rpmy.fd
+%Created by: tex driver
+%Created using fontinst v1.929
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{8rpmy.fd}
+   [2006/11/13 Fontinst v1.929 font definitions for 8r/pmy.]
+
+\DeclareFontFamily{8r}{pmy}{}
+
+\DeclareFontShape{8r}{pmy}{m}{n}{
+   <-> pmyr8r
+}{}
+
+\DeclareFontShape{8r}{pmy}{m}{sl}{
+   <-> pmyro8r
+}{}
+
+\DeclareFontShape{8r}{pmy}{b}{n}{
+   <-> pmyb8r
+}{}
+
+\DeclareFontShape{8r}{pmy}{b}{sl}{
+   <-> pmybo8r
+}{}
+
+\DeclareFontShape{8r}{pmy}{m}{it}{<->ssub * pmy/m/sl}{}
+\DeclareFontShape{8r}{pmy}{bx}{n}{<->ssub * pmy/b/n}{}
+\DeclareFontShape{8r}{pmy}{bx}{sl}{<->ssub * pmy/b/sl}{}
+\DeclareFontShape{8r}{pmy}{b}{it}{<->ssub * pmy/b/sl}{}
+\DeclareFontShape{8r}{pmy}{bx}{it}{<->ssub * pmy/b/it}{}
+
+\endinput

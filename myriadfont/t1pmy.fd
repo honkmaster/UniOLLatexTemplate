@@ -1,0 +1,43 @@
+%Filename: t1pmy.fd
+%Created by: tex driver
+%Created using fontinst v1.929
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1pmy.fd}
+   [2006/11/13 Fontinst v1.929 font definitions for T1/pmy.]
+
+\DeclareFontFamily{T1}{pmy}{}
+
+\DeclareFontShape{T1}{pmy}{m}{n}{
+   <-> pmyr8t
+}{}
+
+\DeclareFontShape{T1}{pmy}{m}{sc}{
+   <-> pmyrc8t
+}{}
+
+\DeclareFontShape{T1}{pmy}{m}{sl}{
+   <-> pmyro8t
+}{}
+
+\DeclareFontShape{T1}{pmy}{b}{n}{
+   <-> pmyb8t
+}{}
+
+\DeclareFontShape{T1}{pmy}{b}{sc}{
+   <-> pmybc8t
+}{}
+
+\DeclareFontShape{T1}{pmy}{b}{sl}{
+   <-> pmybo8t
+}{}
+
+\DeclareFontShape{T1}{pmy}{m}{it}{<->ssub * pmy/m/sl}{}
+\DeclareFontShape{T1}{pmy}{bx}{n}{<->ssub * pmy/b/n}{}
+\DeclareFontShape{T1}{pmy}{bx}{sc}{<->ssub * pmy/b/sc}{}
+\DeclareFontShape{T1}{pmy}{bx}{sl}{<->ssub * pmy/b/sl}{}
+\DeclareFontShape{T1}{pmy}{b}{it}{<->ssub * pmy/b/sl}{}
+\DeclareFontShape{T1}{pmy}{bx}{it}{<->ssub * pmy/b/it}{}
+
+\endinput
