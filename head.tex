@@ -1,18 +1,18 @@
-
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPHorizModule}{\paperheight}
 % --- Header
-\setbeamertemplate{headline}{}
-\renewcommand{\frametitle}[1]
-{
+\setbeamertemplate{frametitle}{
   \leavevmode
   \hbox{
-  \begin{beamercolorbox}[wd=1.01\paperwidth,ht=0.17\paperheight]{}
-	\begin{picture}(0,0){
-		\put(-6, 0){\includegraphics[width=1.01\paperwidth]{images/FullBow}}
-		\put(11,32){\Large \bf \textcolor{white}{#1}}
-	}
-	\end{picture}
-  \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.17\paperheight]{}
+      \begin{textblock*}{\paperwidth}[0,0](0pt,0pt)
+        \includegraphics[width=\paperwidth]{FullBow}
+      \end{textblock*}
+      \begin{textblock*}{\paperwidth}[0,0](6pt,6pt)
+        \Large \bf \textcolor{white}{\insertframetitle}
+      \end{textblock*}
+    \end{beamercolorbox}
   }
-  \vskip0pt
 }
 \newcommand{\Fat}[1]{{\large \bf \textcolor{cdc_Blue}{#1}}}
