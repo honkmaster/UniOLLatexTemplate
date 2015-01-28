@@ -31,5 +31,19 @@
 
 \setbeamersize{text margin left=0.5cm,text margin right=0.5cm}
 
+\setbeamertemplate{frametitle}{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.17\paperheight]{}
+      \begin{textblock*}{\paperwidth}[0,0](0pt,0pt)
+        \includegraphics[width=\paperwidth]{FullBow}
+      \end{textblock*}
+      \begin{textblock*}{\paperwidth}[0,0](6pt,6pt)
+        \Large \bf \textcolor{white}{\insertframetitle}
+      \end{textblock*}
+    \end{beamercolorbox}
+  }
+}
+
 \mode
 <all>
