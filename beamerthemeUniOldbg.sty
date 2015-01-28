@@ -22,3 +22,7 @@
 
 \mode
 <all>
+
+% Add command for missing titlepage field: semester
+\newcommand*{\@semester}{\@empty}
+\newcommand*{\semester}[1]{\gdef\@semester{#1}}
