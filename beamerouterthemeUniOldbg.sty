@@ -23,13 +23,48 @@
     \usebeamerfont{title in head/foot}\insertshorttitle
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
-    \hspace*{3.5em}\usebeamerfont{date in head/foot}\today~~~
+    \hspace*{3.5em}\usebeamerfont{date in head/foot}\insertshortdate~~~
     \insertframenumber{}/\inserttotalframenumber
   \end{beamercolorbox}}%
   \vskip0pt%
 }
 
 \setbeamersize{text margin left=0.5cm,text margin right=0.5cm}
+
+
+\defbeamertemplate*{title page}{UniOldbg}[1][]
+{
+    \begin{beamercolorbox}[wd=1.01\paperwidth,ht=1.01\paperheight]{}
+  \begin{picture}(0,0){
+    \put(-4,4){\includegraphics[width=1.02\paperwidth]{images/memorial_title}}
+    \put(5,197){\includegraphics[width=0.4\linewidth]{unilogo_white.pdf}}
+    \put(150,205){
+      \begin{beamercolorbox}[wd=0.7\paperwidth,ht=0.5\paperheight]{}
+        \textcolor{white}{\large \bf \insertauthor}
+      \end{beamercolorbox}
+    }
+    \put(153,125){\inserttitle}
+    \put(153, 99){\insertinstitute}
+    \put(153, 86){\@semester}
+    \put(153, 73){\insertdate}
+  }
+  \end{picture}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{frametitle}{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.17\paperheight]{}
+      \begin{textblock*}{\paperwidth}[0,0](0pt,0pt)
+        \includegraphics[width=\paperwidth]{FullBow}
+      \end{textblock*}
+      \begin{textblock*}{\paperwidth}[0,0](6pt,6pt)
+        \Large \bf \textcolor{white}{\insertframetitle}
+      \end{textblock*}
+    \end{beamercolorbox}
+  }
+}
 
 \mode
 <all>

@@ -1,7 +1,6 @@
 % Desired Packages
 %\usepackage[pdftex]{graphicx}
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{lastpage}
@@ -16,8 +15,12 @@
 \usepackage{nameref}
 \usepackage{hyperref}
 \usepackage{subfig}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPHorizModule}{\paperheight}
 
 % Further Configurations
+\newcommand{\Fat}[1]{{\large \bf \textcolor{cdc_Blue}{#1}}}
 \renewcommand\rmdefault{pmy}            		% Activate Myriad Font
 \definecolor{Gray}{rgb}{0.5, 0.5, 0.5}  		% Define light color
 \definecolor{HighlightRed}{rgb}{0.6, 0.0, 0.0}  % Define light highlighting color

@@ -1,15 +1,20 @@
 % Page Layout
-\documentclass[12pt,slidestop]{beamer}
+\documentclass[12pt,t]{beamer}
 \usepackage{etex} % Avoid an error due to a lack of registers
+\usepackage[english]{babel} % Defines the language of macros as well
 \include{layout}
-\include{head}
+
 
 \title[ShortTitle]{LongTitle}
 \author[ShortAuthor]{LongAuthor}
+\date{\today}
+\semester{Semester 20XX}
+\institute{Universität Oldenburg}
 
 \begin{document}
 
-\input{title.tex}
+\frame{\titlepage}
+\frame{\frametitle{Gliederung}\tableofcontents}
 
 %%%%%%%%%%%% Start of content %%%%%%%%%%%% 
 
